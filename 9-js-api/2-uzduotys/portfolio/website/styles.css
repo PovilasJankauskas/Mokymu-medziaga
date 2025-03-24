@@ -64,6 +64,10 @@ margin-left: 44px;
     
 }
 
+.main-block-tags {
+    justify-content: center;
+}
+
 .main-block-tags p{
     background-color: #87cefa;
     color: white;
@@ -147,6 +151,8 @@ margin-left: 10px;
     margin: 25px 0 5px 10px;
 }
 
+
 div.carousel-caption {
     position: unset;
 }
+
