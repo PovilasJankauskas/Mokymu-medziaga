@@ -8,6 +8,8 @@ import Features from './pages/features/Features';
 import About from './pages/about/About';
 import OurServices from './pages/services/OurServices';
 import Gallery from './pages/gallery/Gallery';
+import Contacts from './pages/contacts/Contacts';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [landingPageData, setLandingPageData] = useState(null);
@@ -45,6 +47,16 @@ function App() {
               title={landingPageData.gallery.title}
               description={landingPageData.gallery.description}
               images={landingPageData.gallery.images}/>
+            <Contacts
+              title={landingPageData.contacts.title}
+              description={landingPageData.contacts.description}
+              contactInfoTitle={landingPageData.contacts.contactInfoTitle}
+              contactInfoItems={landingPageData.contacts.contactInfoItems}
+              form={landingPageData.contacts.form}
+              socialIcons={landingPageData.contacts.socialIcons}
+              />
+
+              <Footer/>
           </>
         )
       }
